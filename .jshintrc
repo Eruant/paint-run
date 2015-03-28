@@ -1,0 +1,7 @@
+{
+  "globals": {
+    "Meteor": false,
+    "Session": false,
+    "Template": false
+  }
+}
