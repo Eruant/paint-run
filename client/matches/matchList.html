@@ -1,5 +1,11 @@
 <template name="matchList">
   <section>
     <h1>{{ title }}</h1>
+
+    <ul>
+      {{#each matches}}
+        <li>{{ name }}</li>
+      {{/each}}
+    </ul>
   </section>
 </template>
