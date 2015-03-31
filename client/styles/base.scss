@@ -1,5 +1,8 @@
 @import "__base/colors";
+@import "__templates/header";
 
 body {
-  background: $color-base;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
 }
