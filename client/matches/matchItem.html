@@ -1,0 +1,9 @@
+<template name="matchItem">
+  <li>
+    <span>{{ name }}</span>
+    {{ currentCount }} / {{ slots }}
+    {{#if canJoin }}
+      <button>Join</button>
+    {{/if}}
+  </li>
+</template>
