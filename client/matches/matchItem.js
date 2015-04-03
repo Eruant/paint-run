@@ -12,9 +12,11 @@ Template.matchItem.helpers({
 
 Template.matchItem.events({
 
-    'click .ev-join': function (e) {
+  'click .ev-join': function (e) {
 
-        console.log('clicked', e);
-    }
+    var matchId = this._id;
+
+    Meteor.call('joinMatch', matchId);
+  }
 
 });
