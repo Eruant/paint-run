@@ -1,8 +1,17 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans|Rock+Salt);
 
 $font-standard: 'Open Sans', sans-serif;
+$font-hand: 'Rock Salt', cursive;
 
 body {
     font-family: $font-standard;
     font-weight: normal;
+}
+
+h1 {
+    font-family: $font-hand;
+}
+
+.f-hand {
+    font-family: $font-hand;
 }
