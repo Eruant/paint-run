@@ -17,6 +17,8 @@ Template.matchItem.events({
     var matchId = this._id;
 
     Meteor.call('joinMatch', matchId);
+
+    Router.go('/matches/'+ matchId);
   }
 
 });
