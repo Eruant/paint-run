@@ -1,8 +1,6 @@
+@import "__base/normalize";
 @import "__base/colors";
-@import "__templates/header";
+@import "__base/fonts";
 
-body {
-    max-width: 1200px;
-    margin: auto;
-    padding: 10px;
-}
+@import "__templates/page";
+@import "__templates/header";
