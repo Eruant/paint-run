@@ -1,5 +1,6 @@
 <template name="match">
   <p>There are {{ currentUsers.length }} players in this match</p>
+  <p>User: {{ currentUser }}</p>
 
   <ul>
     {{#each players}}
@@ -11,6 +12,6 @@
 
 <template name="player">
 <li>
-  _id: {{ _id }}
+  _id: {{ _id }}, username: {{ username }}
 </li>
 </template>

@@ -10,12 +10,18 @@ Meteor.publish('matchUsers', function (userList) {
 
     // meteor-user-status
     // https://github.com/mizzao/meteor-user-status
-    return Meteor.users.find({
-        "status.online": true
+    var users = Meteor.users.find({
+        "status.online": true,
+        _id: {
+            $in: userList
+        }
     },
     {
         fields: {
+            username: true
         }
     });
+
+    return users;
 
 });
