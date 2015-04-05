@@ -8,8 +8,10 @@ Meteor.publish('matchUsers', function (userList) {
 
     check(userList, Array);
 
+    // meteor-user-status
+    // https://github.com/mizzao/meteor-user-status
     return Meteor.users.find({
-        _id: userList
+        "status.online": true
     },
     {
         fields: {
